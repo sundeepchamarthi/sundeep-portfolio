@@ -1,449 +1,463 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sundeep Chamarthi Portfolio</title>
-
-    <link rel="stylesheet" href="style.css" />
-
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sundeep Chamarthi | Senior Software Developer & Backend Tech Lead</title>
+    <link rel="stylesheet" href="modified.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- NAVBAR -->
-    <header class="navbar">
-        <div class="logo">SUNDEEP</div>
-
-        <nav>
+<header class="navbar">
+    <div class="navbar-container">
+        <a href="#" class="logo">SUNDEEP</a>
+        <nav class="nav-links">
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
-    </header>
+        <button id="menu-btn" class="mobile-menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+    <div id="mobile-menu" class="mobile-navigation hidden">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</header>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-content">
-
-            <h1>Hi, I'm <span>Sundeep Chamarthi</span></h1>
-
-            <h2>
-                Senior Software Developer / Backend Tech Lead
-            </h2>
-
-            <p>
-                Java | Spring Boot | Microservices | Azure | Kubernetes
-            </p>
-
-            <div class="hero-buttons">
-                <a href="./resume.pdf" download class="btn">
-                    Download Resume
-                </a>
-
-                <a href="#contact" class="btn secondary">
-                    Contact Me
-                </a>
-            </div>
-
+<section class="hero">
+    <div class="hero-content">
+        <h1>Hi, I'm <span>Sundeep Chamarthi</span></h1>
+        <h2>Senior Software Developer / Backend Tech Lead</h2>
+        <p>Java | Spring Boot | Microservices | Azure | Kubernetes</p>
+        <div class="hero-buttons">
+            <a href="./resume.pdf" download class="btn secondary-action">
+                <i class="fa-solid fa-download"></i> Download Resume
+            </a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
-        <h2 class="section-title">About Me</h2>
-
-        <div class="card">
+<section id="about" class="section">
+    <div class="section-container">
+        <h2 class="section-title"><span>About</span> Me</h2>
+        <div class="card about-card">
             <p>
-                Senior Software Developer / Backend Tech Lead with 11+ years
-                of experience in designing and developing enterprise applications
-                across Banking, Financial Services, Telecommunications,
-                Government, Insurance, and Logistics domains.
+                Senior Software Developer / Backend Tech Lead with <strong>11+ years of experience</strong> in designing and developing enterprise applications across Banking, Financial Services, Telecommunications, Government, Insurance, and Logistics domains.
             </p>
-
             <p>
-                Strong expertise in Java, Spring Boot, Microservices,
-                REST APIs, Kafka, Azure Cloud, Kubernetes, PostgreSQL,
-                CI/CD, and distributed backend architectures.
+                Strong expertise in <strong>Java (8-21), Spring Boot, Microservices, REST/SOAP APIs, Kafka, and distributed system architectures</strong>. Experienced in backend system design, API integrations, database optimization, CI/CD, Azure cloud deployment, and production support.
             </p>
-
             <p>
-                Experienced in leading backend teams, enterprise application
-                architecture, cloud deployments, API integrations,
-                production support, and scalable system design.
+                Proven ability to lead backend development teams, mentor engineers, and deliver scalable, secure, and high-performance enterprise-level solutions.
             </p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-        <h2 class="section-title">Core Skills</h2>
-
+<section id="skills" class="section border-top">
+    <div class="section-container">
+        <h2 class="section-title">Technical <span>Skills</span></h2>
         <div class="skills-grid">
-
-            <div class="skill-card">Java 8/11/17/21</div>
-            <div class="skill-card">Spring Boot</div>
-            <div class="skill-card">Microservices</div>
-            <div class="skill-card">Kafka</div>
-            <div class="skill-card">REST APIs</div>
-            <div class="skill-card">PostgreSQL</div>
-            <div class="skill-card">MySQL</div>
-            <div class="skill-card">Oracle PL/SQL</div>
-            <div class="skill-card">MongoDB</div>
-            <div class="skill-card">Azure</div>
-            <div class="skill-card">Kubernetes</div>
-            <div class="skill-card">Docker</div>
-            <div class="skill-card">OpenShift</div>
-            <div class="skill-card">GitHub Actions</div>
-            <div class="skill-card">Jenkins</div>
-            <div class="skill-card">CI/CD</div>
-            <div class="skill-card">Swagger/OpenAPI</div>
-            <div class="skill-card">JUnit</div>
-
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Languages & Frameworks</h3>
+                </div>
+                <p>Java (8, 11, 17, 21), Spring Boot, Spring Cloud, Microservices, Struts, SQL, PL/SQL.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fa-solid fa-circle-nodes"></i>
+                    <h3>Messaging & Integration</h3>
+                </div>
+                <p>Kafka, Event-Driven Architecture, REST APIs, SOAP Web Services, WSDL, JSON/XML.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fa-solid fa-cloud"></i>
+                    <h3>Cloud & DevOps</h3>
+                </div>
+                <p>Azure (App Services, PostgreSQL, Storage), OpenShift, Kubernetes, Docker, CI/CD, Jenkins, GitHub Actions.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>Databases</h3>
+                </div>
+                <p>PostgreSQL, MySQL, Oracle (PL/SQL), MongoDB.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h3>Tools & Quality</h3>
+                </div>
+                <p>Git, Bitbucket, Jira, SonarQube, Maven, Swagger/OpenAPI, JUnit, Mockito.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fa-solid fa-display"></i>
+                    <h3>Frontend Web</h3>
+                </div>
+                <p>HTML, CSS, Bootstrap, JavaScript, Ajax, JSP, JSTL.</p>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section">
-
-        <h2 class="section-title">Enterprise Experience</h2>
-
+<section id="experience" class="section border-top">
+    <div class="section-container max-w-timeline">
+        <h2 class="section-title">Professional <span>Experience</span></h2>
         <div class="timeline">
-
-            <!-- EXPERIENCE 1 -->
             <div class="timeline-item">
-
-                <h3>Enterprise Financial Valuation Platform</h3>
-
-                <span>Banking & Financial Services Domain</span>
-
-                <p>
-                    Designed and developed high-performance Java 21 Spring Boot
-                    microservices for enterprise valuation and analytics workflows.
-                </p>
-
-                <p>
-                    Built scalable REST APIs, optimized PostgreSQL/MySQL queries,
-                    and managed Azure cloud deployments for enterprise systems.
-                </p>
-
-                <p>
-                    Led backend development activities and mentored developers
-                    in enterprise microservices architecture and CI/CD practices.
-                </p>
-
-                <p>
-                    <strong>Tech Stack:</strong>
-                    Java 21, Spring Boot, Microservices, PostgreSQL,
-                    Azure, Kubernetes, CI/CD
-                </p>
-
+                <div class="timeline-dot"></div>
+                <span class="timeline-date">Mar 2023 - Apr 2026</span>
+                <h3>Senior Software Developer / Microservices Developer</h3>
+                <h4>YM Global Technologies — Kuala Lumpur</h4>
+                <h5 class="clients-highlighter">Clients: 73Strings / OCBC Bank</h5>
             </div>
-
-            <!-- EXPERIENCE 2 -->
             <div class="timeline-item">
-
-                <h3>Digital Banking & Rewards Platform</h3>
-
-                <span>Enterprise Banking Systems</span>
-
-                <p>
-                    Developed secure banking microservices and REST APIs
-                    integrating with multiple enterprise systems and distributed services.
-                </p>
-
-                <p>
-                    Implemented Kafka-based asynchronous messaging workflows
-                    and optimized high-volume transaction processing systems.
-                </p>
-
-                <p>
-                    <strong>Tech Stack:</strong>
-                    Spring Boot, Kafka, Redis,
-                    OpenShift, Kubernetes, PostgreSQL
-                </p>
-
+                <div class="timeline-dot"></div>
+                <span class="timeline-date">Oct 2020 - Mar 2023</span>
+                <h3>System Analyst</h3>
+                <h4>Lenovo PCCW Solutions — Kuala Lumpur</h4>
+                <h5 class="clients-highlighter">Client: StarHub</h5>
             </div>
-
-            <!-- EXPERIENCE 3 -->
             <div class="timeline-item">
-
-                <h3>Enterprise Telecom Microservices Platform</h3>
-
-                <span>Telecommunications Domain</span>
-
-                <p>
-                    Developed scalable backend systems supporting telecom operations,
-                    subscription management, billing, and digital services.
-                </p>
-
-                <p>
-                    Optimized backend integrations, SQL performance,
-                    and production deployment workflows.
-                </p>
-
-                <p>
-                    <strong>Tech Stack:</strong>
-                    Java, Spring Boot, Oracle,
-                    PostgreSQL, CI/CD
-                </p>
-
+                <div class="timeline-dot"></div>
+                <span class="timeline-date">Aug 2019 - Oct 2020</span>
+                <h3>Senior Software Developer</h3>
+                <h4>ICREST SDN BHD — Kuala Lumpur</h4>
+                <h5 class="clients-highlighter">Client: CIMB Bank</h5>
             </div>
-
-            <!-- EXPERIENCE 4 -->
             <div class="timeline-item">
-
-                <h3>Enterprise Banking Workflow Portal</h3>
-
-                <span>Banking Internal Operations Platform</span>
-
-                <p>
-                    Developed enterprise workflow and employee service platforms
-                    using Java MVC architecture and Oracle PL/SQL systems.
-                </p>
-
-                <p>
-                    Supported production deployments, application optimization,
-                    and critical enterprise workflows.
-                </p>
-
-                <p>
-                    <strong>Tech Stack:</strong>
-                    Java, Struts, JSP,
-                    Oracle PL/SQL, Jenkins
-                </p>
-
+                <div class="timeline-dot"></div>
+                <span class="timeline-date">Oct 2018 - Sep 2019</span>
+                <h3>Senior Software Developer</h3>
+                <h4>SYNERGY LOGIN SYSTEMS SDN BHD — Kuala Lumpur</h4>
+                <h5 class="clients-highlighter">Client: JPN (National Registration Department)</h5>
             </div>
-
-            <!-- EXPERIENCE 5 -->
             <div class="timeline-item">
-
-                <h3>Government Identity & Immigration Platform</h3>
-
-                <span>Government Integration Systems</span>
-
-                <p>
-                    Developed secure backend integrations and SOAP web services
-                    supporting identity verification and registration workflows.
-                </p>
-
-                <p>
-                    Worked on enterprise-level Oracle backend processing,
-                    integrations, and production support systems.
-                </p>
-
-                <p>
-                    <strong>Tech Stack:</strong>
-                    Java, SOAP, WSDL,
-                    Oracle SQL, WebLogic
-                </p>
-
+                <div class="timeline-dot"></div>
+                <span class="timeline-date">Sep 2016 - Oct 2018</span>
+                <h3>Software Developer</h3>
+                <h4>ACURA TECHNOLOGIES — Kuala Lumpur</h4>
+                <h5 class="clients-highlighter">Client: Takaful Insurance / WorkSpez</h5>
             </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-date">Jun 2015 - Sep 2016</span>
+                <h3>Java Developer</h3>
+                <h4>KWINIT IT SERVICES — Hyderabad, India</h4>
+                <h5 class="clients-highlighter">Client: Emirates Shipping Line (ESL)</h5>
+            </div>
+        </div>
+    </div>
+</section>
 
+<section id="projects" class="projects-section">
+    <h2 class="section-title">Featured <span>Projects</span></h2>
+    <div class="projects-grid-clean">
+
+        <div class="compact-project-card">
+            <div class="card-top">
+                <div class="project-meta">
+                    <span class="project-tag">FinTech</span>
+                    <h3>73Strings</h3>
+                </div>
+                <h4 class="project-sub">Enterprise Equity Valuation Platform</h4>
+                <p class="project-summary">An enterprise financial valuation and analytics platform supporting valuation processing, financial modelling, reporting workflows, and investment analysis for private equity firms.</p>
+            </div>
+            <details class="project-details-dropdown">
+                <summary>View Key Contributions</summary>
+                <ul>
+                    <li>Designed and developed high-performance Java 21 and Spring Boot microservices tailored for complex financial valuation workflows.</li>
+                    <li>Built robust REST APIs and secure backend services to power Excel-based financial plugins and enterprise reporting systems.</li>
+                    <li>Optimized cloud infrastructure and persistence layers across PostgreSQL and MySQL queries to improve platform execution speed.</li>
+                    <li>Managed secure Azure cloud components including App Services, PostgreSQL databases, and Storage Accounts under environment-based configurations.</li>
+                    <li>Enforced high code quality metrics and test coverage across pipelines using automated CI/CD deployments alongside JUnit, Mockito, and SonarQube.</li>
+                </ul>
+            </details>
+            <div class="project-tech-minimal">
+                <span>Java 21</span><span>Spring Boot</span><span>PostgreSQL</span><span>Azure</span><span>SonarQube</span>
+            </div>
         </div>
 
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-
-        <h2 class="section-title">Enterprise Projects</h2>
-
-        <div class="projects-grid">
-
-            <!-- 73Strings -->
-            <div class="project-card">
-
-                <h3>73Strings – Enterprise Equity Valuation Platform</h3>
-
-                <p>
-                    Enterprise financial valuation and analytics platform for
-                    private equity firms supporting valuation processing,
-                    financial modelling, reporting workflows, and investment analysis.
-                </p>
-
-                <p>
-                    Built high-performance Java 21 Spring Boot microservices,
-                    optimized PostgreSQL/MySQL queries, and managed Azure cloud deployments.
-                </p>
-
-                <p>
-                    <strong>Tech Stack:</strong>
-                    Java 21, Spring Boot, Microservices, PostgreSQL,
-                    Azure, Devtron, SonarQube
-                </p>
-
+        <div class="compact-project-card">
+            <div class="card-top">
+                <div class="project-meta">
+                    <span class="project-tag">Banking</span>
+                    <h3>CDI-CCRA & OBAO</h3>
+                </div>
+                <h4 class="project-sub">Enterprise Digital Banking Platforms</h4>
+                <p class="project-summary">Scalable core banking platforms supporting online business account opening, credit report integrations, and cross-border rewards processing across ASEAN regions.</p>
             </div>
-
-            <!-- OCBC -->
-            <div class="project-card">
-
-                <h3>OCBC Banking Systems</h3>
-
-                <p>
-                    Developed enterprise banking platforms including
-                    CDI-CCRA, OBAO, and GI Rewards System for ASEAN banking operations.
-                </p>
-
-                <p>
-                    Designed secure REST APIs integrating with 35+ enterprise systems,
-                    Kafka messaging workflows, and distributed microservices architecture.
-                </p>
-
-                <p>
-                    <strong>Tech Stack:</strong>
-                    Spring Boot, Kafka, PostgreSQL, Redis,
-                    OpenShift, Kubernetes
-                </p>
-
+            <details class="project-details-dropdown">
+                <summary>View Key Contributions</summary>
+                <ul>
+                    <li>Developed scalable microservices for digital corporate banking, online account setups, and regional rewards systems using Spring Boot and Spring Batch.</li>
+                    <li>Designed highly secure enterprise REST APIs interfacing seamlessly with 35–40 internal and external systems including GovTech, Core Banking, and Internet Banking.</li>
+                    <li>Integrated Kafka distributed event streaming for handling high-volume, real-time asynchronous messaging workflows.</li>
+                    <li>Optimized data caching with Redis and fine-tuned JPA/Hibernate persistence mappings to guarantee high-throughput transaction processing.</li>
+                    <li>Collaborated in fast-paced Agile environments supporting containerized deployments over OpenShift and Kubernetes clusters.</li>
+                </ul>
+            </details>
+            <div class="project-tech-minimal">
+                <span>Java</span><span>Spring Boot</span><span>Kafka</span><span>Redis</span><span>OpenShift</span><span>Kubernetes</span>
             </div>
-
-            <!-- StarHub -->
-            <div class="project-card">
-
-                <h3>StarHub Telecom Systems</h3>
-
-                <p>
-                    Enterprise telecom platform supporting mobile,
-                    broadband, billing, subscription, and digital services
-                    for millions of customers.
-                </p>
-
-                <p>
-                    Developed scalable Java Spring Boot microservices,
-                    optimized backend integrations, and improved production performance.
-                </p>
-
-                <p>
-                    <strong>Tech Stack:</strong>
-                    Java, Spring Boot, Microservices,
-                    PostgreSQL, Oracle, CI/CD
-                </p>
-
-            </div>
-
-            <!-- CIMB -->
-            <div class="project-card">
-
-                <h3>CIMB Application Portal System (CAPS)</h3>
-
-                <p>
-                    Internal enterprise banking portal supporting workflow management,
-                    employee services, and business operations across ASEAN regions.
-                </p>
-
-                <p>
-                    Designed enterprise applications using Java,
-                    Struts MVC, Oracle SQL, and PL/SQL.
-                </p>
-
-                <p>
-                    <strong>Tech Stack:</strong>
-                    Java, Struts, JSP, Oracle PL/SQL,
-                    Jenkins, WebLogic
-                </p>
-
-            </div>
-
-            <!-- JPN -->
-            <div class="project-card">
-
-                <h3>JPN Immigration Integration System</h3>
-
-                <p>
-                    Government identity and immigration integration platform supporting
-                    MyKad, MyKid, applicant verification, and online registration services.
-                </p>
-
-                <p>
-                    Developed backend applications, SOAP web services,
-                    and secure government integrations.
-                </p>
-
-                <p>
-                    <strong>Tech Stack:</strong>
-                    Java, Spring Boot, SOAP, WSDL,
-                    Oracle SQL, WebLogic
-                </p>
-
-            </div>
-
-            <!-- ESL -->
-            <div class="project-card">
-
-                <h3>Emirates Shipping Line (ESL)</h3>
-
-                <p>
-                    Enterprise shipping and logistics platform supporting booking,
-                    billing, scheduling, container tracking, and shipping operations.
-                </p>
-
-                <p>
-                    Provided production support, incident troubleshooting,
-                    RCA analysis, and performance optimization.
-                </p>
-
-                <p>
-                    <strong>Tech Stack:</strong>
-                    Java, Struts, JSP,
-                    Oracle SQL, Log4j, Tomcat
-                </p>
-
-            </div>
-
         </div>
 
-    </section>
+        <div class="compact-project-card">
+            <div class="card-top">
+                <div class="project-meta">
+                    <span class="project-tag">Telecom</span>
+                    <h3>StarHub Systems</h3>
+                </div>
+                <h4 class="project-sub">Customer Operations Platform</h4>
+                <p class="project-summary">A high-scale telecom platform supporting mobile, broadband, billing, subscription management, and digital ecosystem services for millions of customers.</p>
+            </div>
+            <details class="project-details-dropdown">
+                <summary>View Key Contributions</summary>
+                <ul>
+                    <li>Functioned as System Analyst designing and engineering robust Java Spring Boot microservices for high-frequency subscriber business operations.</li>
+                    <li>Developed clean REST APIs and managed data synchronization logic across distributed legacy and modern enterprise systems.</li>
+                    <li>Implemented efficient structural data mapping using JPA/Hibernate while optimizing complex relational queries across PostgreSQL and Oracle DB.</li>
+                    <li>Led cross-functional technical alignments, conducted meticulous code reviews, and mentored junior development team members on microservice architecture.</li>
+                    <li>Architected automated CI/CD pipelines to control staging and monitored active production metrics to maintain application performance thresholds.</li>
+                </ul>
+            </details>
+            <div class="project-tech-minimal">
+                <span>Java</span><span>Spring Boot</span><span>PostgreSQL</span><span>Oracle DB</span><span>CI/CD</span>
+            </div>
+        </div>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-        <h2 class="section-title">Contact</h2>
+        <div class="compact-project-card">
+            <div class="card-top">
+                <div class="project-meta">
+                    <span class="project-tag">Banking</span>
+                    <h3>CAPS Portal</h3>
+                </div>
+                <h4 class="project-sub">CIMB Application Portal System</h4>
+                <p class="project-summary">An internal enterprise portal supporting regional business operations, critical financial workflows, and employee digital services across multiple ASEAN countries.</p>
+            </div>
+            <details class="project-details-dropdown">
+                <summary>View Key Contributions</summary>
+                <ul>
+                    <li>Maintained and enhanced legacy banking systems using structural Java MVC design frameworks containing Struts and JSP.</li>
+                    <li>Designed and performance-optimized critical backend queries, indices, and procedural components with Oracle SQL and PL/SQL.</li>
+                    <li>Ensured system stability and processing accuracy for core financial workflows across internal departments.</li>
+                    <li>Delivered Tier-3 production troubleshooting support, managed runtime middleware configurations, and handled deployments across WebLogic and Tomcat servers.</li>
+                    <li>Liaised directly with corporate business users and software delivery partners to refine and build application features.</li>
+                </ul>
+            </details>
+            <div class="project-tech-minimal">
+                <span>Java</span><span>Struts</span><span>JSP</span><span>Oracle PL/SQL</span><span>WebLogic</span><span>Tomcat</span>
+            </div>
+        </div>
 
-        <div class="card contact-card">
+        <div class="compact-project-card">
+            <div class="card-top">
+                <div class="project-meta">
+                    <span class="project-tag">GovTech</span>
+                    <h3>CASTS / EJPN</h3>
+                </div>
+                <h4 class="project-sub">Immigration Integration System</h4>
+                <p class="project-summary">A highly secure government identity and national immigration integration platform supporting MyKad, MyKid, online user registration, and applicant verification.</p>
+            </div>
+            <details class="project-details-dropdown">
+                <summary>View Key Contributions</summary>
+                <ul>
+                    <li>Engineered secure Java backend application components and robust SOAP web services utilizing WSDL contracts for strict national agency integrations.</li>
+                    <li>Integrated low-level peripheral hardware device drivers (IPT300) into the platform interface to parse and process embedded MyKid chip data.</li>
+                    <li>Optimized complex relational schemas, stored packages, and transaction sequences with Oracle SQL/PLSQL.</li>
+                    <li>Maintained high platform availability metrics by diagnosing and mitigating production bugs in real-time.</li>
+                    <li>Supervised version control repositories through SVN and facilitated continuous build cycles via automated Jenkins configurations.</li>
+                </ul>
+            </details>
+            <div class="project-tech-minimal">
+                <span>Java</span><span>Spring Boot</span><span>SOAP</span><span>WSDL</span><span>Oracle PL/SQL</span><span>Jenkins</span>
+            </div>
+        </div>
 
-            <p>
-                <i class="fa-solid fa-envelope"></i>
-                ch.sundeep72561@gmail.com
-            </p>
+        <div class="compact-project-card">
+            <div class="card-top">
+                <div class="project-meta">
+                    <span class="project-tag">Insurance / ERP</span>
+                    <h3>Takaful & WorkSpez</h3>
+                </div>
+                <h4 class="project-sub">Workflow & Cloud Accounting Systems</h4>
+                <p class="project-summary">Enterprise insurance processing and cloud-based accounting platforms supporting policy management, insurance claims workflows, and secure accounting tools.</p>
+            </div>
+            <details class="project-details-dropdown">
+                <summary>View Key Contributions</summary>
+                <ul>
+                    <li>Full-stack development of enterprise insurance processing nodes and ledger tracking utilities utilizing Java, Spring Boot, Struts, and JSP.</li>
+                    <li>Engineered complex database procedures and rules with Oracle SQL and PL/SQL for fast and error-free financial premium transaction processing.</li>
+                    <li>Exposed internal tools externally by architecting reusable REST APIs while creating responsive user-facing UI designs using CSS, Bootstrap, and JavaScript.</li>
+                    <li>Investigated live application log files to debug environment exceptions and execute database-level balance optimization scripts.</li>
+                    <li>Partnered alongside business managers to perform standard requirement gathering and system feature expansion mapping.</li>
+                </ul>
+            </details>
+            <div class="project-tech-minimal">
+                <span>Java</span><span>Spring Boot</span><span>Struts</span><span>REST APIs</span><span>Oracle</span><span>MySQL</span>
+            </div>
+        </div>
 
-            <p>
-                <i class="fa-solid fa-phone"></i>
-                +60 11-3381 8870
-            </p>
+        <div class="compact-project-card">
+            <div class="card-top">
+                <div class="project-meta">
+                    <span class="project-tag">Logistics</span>
+                    <h3>Emirates Shipping Line</h3>
+                </div>
+                <h4 class="project-sub">Logistics & Shipping Operations</h4>
+                <p class="project-summary">An enterprise shipping logistics ecosystem handling container bookings, corporate billing, route scheduling, container tracking, and maritime ops.</p>
+            </div>
+            <details class="project-details-dropdown">
+                <summary>View Key Contributions</summary>
+                <ul>
+                    <li>Monitored and maintained high operational uptime profiles for core client-facing shipping management platforms built on Java, Struts, and JSP.</li>
+                    <li>Spearheaded production hotfixing, handled technical environment exceptions, and diagnosed unexpected database locks or runtime interruptions.</li>
+                    <li>Performed systemic Root Cause Analysis (RCA) on repeating server glitches to proactively scale processing performance.</li>
+                    <li>Utilized Log4j framework log outputs to track server-side user activities and troubleshoot data inconsistencies across Tomcat servers.</li>
+                    <li>Collaborated across international tier-1 business ops and support cells to plan out feature patches and code updates.</li>
+                </ul>
+            </details>
+            <div class="project-tech-minimal">
+                <span>Java</span><span>Struts</span><span>JSP</span><span>Oracle SQL</span><span>Log4j</span><span>Tomcat</span>
+            </div>
+        </div>
 
-            <p>
-                <i class="fa-solid fa-location-dot"></i>
-                Kuala Lumpur, Malaysia
-            </p>
+    </div>
+</section>
 
-            <div class="social-links">
 
-                <a href="https://www.linkedin.com/in/sundeep-chamarthi-25b002113/" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
+<section id="contact" class="contact-section">
+    <h2 class="section-title">Get In <span>Touch</span></h2>
+
+    <div class="contact-container">
+
+        <div class="contact-info-card">
+            <h3>Let's Connect</h3>
+            <p class="contact-subtext">Whether you have an exciting backend engineering role, a consulting opportunity, or just want to discuss microservices architecture—feel free to drop a message or reach out directly!</p>
+
+            <div class="info-links-list">
+                <div class="info-item">
+                    <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="info-text">
+                        <span>Location</span>
+                        <p>Kuala Lumpur, Malaysia</p>
+                    </div>
+                </div>
+
+                <a href="mailto:ch.sundeep72561@gmail.com" class="info-item interactive-link">
+                    <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="info-text">
+                        <span>Email Address</span>
+                        <p>ch.sundeep72561@gmail.com</p>
+                    </div>
                 </a>
 
-                <!--<a href="#" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>-->
-
+                <a href="tel:+601133818870" class="info-item interactive-link">
+                    <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div class="info-text">
+                        <span>Mobile Number</span>
+                        <p>+60 11-3381 8870</p>
+                    </div>
+                </a>
             </div>
 
+            <div class="whatsapp-action-wrapper">
+                <a href="https://wa.me/601133818870?text=Hi%20Sundeep,%20I%20viewed%20your%20portfolio%20" target="_blank" class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Chat via WhatsApp
+                </a>
+            </div>
+
+            <div class="contact-socials">
+                <a href="https://www.linkedin.com/in/sundeep-chamarthi-25b002113/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
         </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>
-            © 2026 Sundeep Chamarthi | Backend Tech Lead | Senior Java Developer
-        </p>
-    </footer>
+        <div class="contact-form-wrapper">
+            <form action="https://formspree.io/f/mqejbova" method="POST" class="clean-contact-form">
+                <div class="form-group-row">
+                    <div class="input-box">
+                        <input type="text" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="email" required placeholder="Your Email">
+                    </div>
+                </div>
 
-    <script src="script.js"></script>
+                <div class="input-box">
+                    <input type="text" name="subject" required placeholder="Subject">
+                </div>
 
+                <div class="input-box">
+                    <textarea name="message" required placeholder="Type Your Message Here..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn-modern">
+                    Send Message <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2026 Sundeep Chamarthi | Backend Tech Lead. All rights reserved.</p>
+</footer>
+
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    });
+
+    document.getElementById('portfolioContactForm').addEventListener('submit', function(event) {
+event.preventDefault();
+
+// Extracting all values safely
+const name = this.querySelector('input[name="name"]').value;
+const email = this.querySelector('input[name="email"]').value;
+const phone = this.querySelector('input[name="phone"]').value || "Not Provided";
+const whatsapp = this.querySelector('input[name="whatsapp"]').value || "Not Provided";
+const subjectLine = this.querySelector('input[name="subject"]').value;
+const rawMessage = this.querySelector('textarea[name="message"]').value;
+
+// Formatting email text blocks
+const bodyContent = encodeURIComponent(
+    `Hi Sundeep,\n\nYou have received a new message from your portfolio website:\n\n` +
+    `• Name: ${name}\n` +
+    `• Email: ${email}\n` +
+    `• Mobile: ${phone}\n` +
+    `• WhatsApp Context: ${whatsapp}\n\n` +
+    `Message Details:\n${rawMessage}`
+);
+
+const mailtoUrl = `mailto:ch.sundeep72561@gmail.com?subject=[Portfolio Intake] ${encodeURIComponent(subjectLine)}&body=${bodyContent}`;
+
+// Action execution
+window.location.href = mailtoUrl;
+});
+</script>
 </body>
 </html>
